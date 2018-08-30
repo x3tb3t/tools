@@ -54,7 +54,7 @@ public class ssh_bruteforce {
 
 	public static void main(String args[]) {
 		if (args.length != 3) {
-			System.out.println("usage: ./ssh_bruteforce.jar [TARGET[:PORT]] [USERNAME] [WORDLIST]");
+			System.out.println("usage: ./ssh_bruteforce [TARGET[:PORT]] [USERNAME] [WORDLIST]");
 			System.exit(1);
 		}
 		String targetIP;
