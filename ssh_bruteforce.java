@@ -70,7 +70,7 @@ public class ssh_bruteforce {
 		checkHost(targetIP, targetPort);
 		String user = args[1];
 		ArrayList<String> wordlist = getWordlist(args[2]);
-		System.out.println(String.format("cracking SSH password for \"%s\" at %s...\n", user, targetIP));
+		System.out.println(String.format("cracking SSH password for %s at %s\n", user, targetIP));
 		for (int i=0; i < wordlist.size(); i++) {
 			if (crackPass(targetIP, user, wordlist.get(i), targetPort)) {
 				System.out.println("password found:");
