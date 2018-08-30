@@ -83,4 +83,3 @@ public class ssh_bruteforce {
 		System.exit(0);
 	}
 }
-
