@@ -12,5 +12,3 @@ def file_diff(original_file, malicious_file):
 	diff_report = open(output_html_file, "w")
 	diff_report.write(diff)
 	diff_report.close()
-
-	
