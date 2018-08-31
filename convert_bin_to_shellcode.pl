@@ -1,10 +1,5 @@
 #!/usr/bin/perl
-# Perl script written by Peter Van Eeckhoutte
-# http://www.corelan.be
-# This script takes a filename as argument
-# will read the file 
-# and output the bytes in \x format
-#
+
 if ($#ARGV ne 0) { 
 print "  usage: $0 ".chr(34)."filename".chr(34)."\n"; 
 exit(0); 
