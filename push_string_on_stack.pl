@@ -1,10 +1,5 @@
 #!/usr/bin/perl
-# Perl script written by Peter Van Eeckhoutte
-# http://www.corelan.be
-# This script takes a string as argument
-# and will produce the opcodes 
-# to push this string onto the stack
-#
+
 if ($#ARGV ne 0) { 
 print "  usage: $0 ".chr(34)."String to put on stack".chr(34)."\n"; 
 exit(0); 
