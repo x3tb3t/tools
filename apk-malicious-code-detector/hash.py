@@ -26,7 +26,3 @@ def hashFiles(path, dict):
     		hasher.update(buf)
 		
     dict[file_short] = hasher.hexdigest() 
-	
-
-
-
