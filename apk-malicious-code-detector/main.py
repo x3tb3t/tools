@@ -20,8 +20,7 @@ if arg_parser().update == 'all':
     list_url = fetch.geturls()
     print list_url
 
- 
-
+	
 maliciousApp = arg_parser().malicious
 legitApp = arg_parser().legit
 
@@ -39,7 +38,6 @@ decompile.disass(legitApp, output_path2)
 hash.hashFiles(output_path1, hash_dict1)
 hash.hashFiles(output_path2, hash_dict2)
 
-
 for k in hash_dict1:
         if k in hash_dict2:
                 if hash_dict1[k] != hash_dict2[k]:
@@ -48,6 +46,6 @@ for k in hash_dict1:
 			absolute_file2 = 'output/malicious_app/' + k
 			diff.file_diff(absolute_file1, absolute_file2)
         else:
-                print k + " : This file is not present in the legit app !"
+                print k + " : This file is not present in the original app !"
 
 print 'Export results in HTML files'
