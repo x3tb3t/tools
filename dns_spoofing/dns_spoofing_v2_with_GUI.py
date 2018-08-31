@@ -2,20 +2,20 @@
 # -*- coding: utf-8 -*-
 # to do : check returned error codes
 # ----------------------------------------------------------------------------------------------------#
-#                                          PRE-REQUISTES                                         	  #
+#                                          PRE-REQUISTES                                              #
 # ----------------------------------------------------------------------------------------------------#
-# 1 - apt-get install python-scapy                                             			        	  #
-# 2 - apt-get install python-netifaces python-netaddr      		         						   	  #
-# 3 - apt-get install python-nmap 								         						 	  #
-#     If error with PortScanner or is not found, install from source :	 							  #
-# 		- tar zxvf python-nmap-0.4.4.tar.gz								 							  #
-#  		- cd python-nmap-0.4.4/																	 	  #
-#		- python setup.py install                                                                	  #                                                  
+# 1 - apt-get install python-scapy                                             			      #
+# 2 - apt-get install python-netifaces python-netaddr      		         		      #
+# 3 - apt-get install python-nmap 								      #
+#     If error with PortScanner or is not found, install from source :	 			      #
+# 		- tar zxvf python-nmap-0.4.4.tar.gz						      #
+#  		- cd python-nmap-0.4.4/								      #
+#		- python setup.py install                                                             #                                                  
 # 4 - apt-get install nfqueue-bindings-python                                                         #
-# 5 - SSL Activation on webserver: 														     		  #
-# 		- a2enmod ssl 																     			  #
-# 		- a2ensite default-ssl                                                   			          #
-# 		- service apache2 reload			                                                          #
+# 5 - SSL Activation on webserver: 								      #
+# 		- a2enmod ssl 									      #
+# 		- a2ensite default-ssl                                                   	      #
+# 		- service apache2 reload			                                      #
 # 6 - Redirect 404 (NotFound) errors to index on webserver                                            #                                                                                #
 # --------------------------------------------------------------------------------------------------- #
 
