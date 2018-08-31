@@ -106,7 +106,6 @@ def isAuthenticated(url):
 		print '\t[-] Request TIMEOUT'
 		return 'timeOut'
 
-
 def bypassAuth(endpoint):
 	# try bypass auth (change HTTP methods, SQLi, NoSQLi)
 	print '\t[*] bypassAuth(): not implemented yet'
@@ -126,7 +125,6 @@ def bruteforce(endpoint):
 
 def finding():
 	print '\tfinding(): not implemented yet'	
-
 
 
 def main():
@@ -177,9 +175,7 @@ def main():
 			pass
 
 	doReport()
-
+	
 
 if __name__ == "__main__":
     main()
-    
-    
