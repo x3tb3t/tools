@@ -4,6 +4,7 @@ from sulley import *
 import sys
 import time
  
+ 
 """ Receive banner when connecting to server. """
 def banner(sock):
     sock.recv(1024)
