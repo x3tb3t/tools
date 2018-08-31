@@ -108,7 +108,6 @@ q.bind(socket.AF_INET) #Bind IPv4, soket
 q.set_callback(callback) #Appel le fonction callback pour le traitement
 q.create_queue(0) # Numéro de la file d'attente
 
-
 # Sniff
 try:
     q.try_run() # 
