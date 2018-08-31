@@ -92,7 +92,7 @@ def writeEvilFile(crash):
     with open(crash_file,'w') as f:
         f.write(crash)
 
-
+        
 def chars_to_str(chars):
     # Convert a list of chars to a string
     result = ""
@@ -211,7 +211,6 @@ def restart_service():
         print("[-] Program does not respond. Restarting...")
         return restart_service()
     
-
 
 def check_char(rawdata):
     # Compare the buffer sent with the one in memory to see if it has been mangled in order to identify bad characters.
