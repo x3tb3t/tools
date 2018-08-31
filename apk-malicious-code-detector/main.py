@@ -10,8 +10,8 @@ def msg():
 
 def arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--malicious", help="Malicious App Name")
-    parser.add_argument("-l", "--legit", help="Legit App Name")
+    parser.add_argument("-m", "--malicious", help="Malicious apk")
+    parser.add_argument("-o", "--original", help="Original apk")
     parser.add_argument('-u', "--update", help='Update the offline db')
     return parser.parse_args()
 
@@ -22,7 +22,7 @@ if arg_parser().update == 'all':
 
 	
 maliciousApp = arg_parser().malicious
-legitApp = arg_parser().legit
+originalApp = arg_parser().original
 
 output_path1 = 'output/malicious_app/' 
 output_path2 = 'output/legit_app/' 
@@ -33,7 +33,7 @@ print 'Decompile malicious app...'
 decompile.disass(maliciousApp, output_path1)
 
 print 'Decompile original app...'
-decompile.disass(legitApp, output_path2)
+decompile.disass(originalApp, output_path2)
 
 hash.hashFiles(output_path1, hash_dict1)
 hash.hashFiles(output_path2, hash_dict2)
