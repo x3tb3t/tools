@@ -8,6 +8,7 @@ if ($ARGV[4] eq '') {
   die("Usage: $0 IP_ADDRESS PORT SKIPFILE SKIPVAR SKIPSTR\n\n");
 }
 
+
 $skipfiles = $ARGV[2];
 
 @files = <*.spk>;
