@@ -10,7 +10,6 @@ This tool handle the following format for input and output:
 0x41 0x41 0x41 0x41
 
 For multi-lines input, paste the hex string into hexInput.txt
-
 '''
 
 import argparse
