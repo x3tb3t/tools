@@ -24,5 +24,3 @@ def disass(filename, path):
         print "[-] Decompilation error :\n", result
     else:
         print "[+] Decompilation success"
-
-
