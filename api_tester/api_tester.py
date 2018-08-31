@@ -8,15 +8,18 @@
 
 import requests
 
-# Endpoint list. Find accurate way to get all api endpoints. Otherwise hardcoded.
+# Endpoint list: find accurate way to get all api endpoints or have to hardcode it.
 endpoints = {'api.host.com':['/api/test/v1/client', '/test1', '/test2'], 'api2.host.com':['/test1', '/test2'], 'api3.host.com':['/test1', '/test2']}
 
 # Sample data
 authTokens = ['', '', '']
-clientIds = ['', '', '']
-storeIds = ['', '', '']
-productsName = ['', '', '']
-productsType = ['', '', '']
+clientId = ['', '', '']
+clientName = ['', '', '']
+storeId = ['', '', '']
+storeName = ['', '', '']
+productId = ['', '', '']
+productName = ['', '', '']
+productType = ['', '', '']
 phoneNumbers = ['', '', '']
 postalAddresses = ['', '', '']
 
