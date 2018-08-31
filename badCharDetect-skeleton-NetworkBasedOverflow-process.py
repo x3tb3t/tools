@@ -260,7 +260,6 @@ def check_char(rawdata):
             f.write(chars_to_str(badchars))
     return
 
-
 def _access_violation_handler(dbg):
     """On access violation read data from the stack to
     determine if the sent buffer was mangled in any way"""
@@ -288,7 +287,7 @@ def _access_violation_handler(dbg):
     check_char(buffer)
 
     dbg.detach()
-
+    
     return DBG_EXCEPTION_NOT_HANDLED
 
 
